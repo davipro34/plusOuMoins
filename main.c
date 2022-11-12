@@ -6,9 +6,33 @@
 //
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 int main(int argc, char *argv[]) {
+
+    srand(time(NULL));
+
+    const int MAX = 100, MIN = 1;
+    static int nombreMystere = 0;
+    nombreMystere = rand() % (MAX + MIN);
+
+    int nombreEntre = 0;
+
+    while (nombreEntre != nombreMystere) {
+        // printf("Chuuut, voici le nombre mystere : %d\n", nombreMystere); // Cheat pour le debug !
+        printf("Entrez un nombre entre 1 et 100 \n");
+        scanf("%d", &nombreEntre);
+            if (nombreEntre < nombreMystere) {
+                printf("Desole, trop petit !\nEssayez encore\n\n");
+            }
+            else if (nombreEntre > nombreMystere) {
+                printf("Desole, trop grand !\nEssayez encore\n\n");
+            }
+            else {
+                printf("Bravo !\n Vous avez trouve le nombre mystere !\n");
+            } 
+    }
 
         return 0;
 }
