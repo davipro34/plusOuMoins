@@ -17,7 +17,7 @@ Le but du jeu, bien sûr, est de trouver le nombre mystère en un minimum de cou
 J'ai compile le code pour Linux et Windows.
 
 Pour Linux :
-    x86_64-pc-linux-gnu-gcc -o plusOuMoins.app main.c
+    x86_64-pc-linux-gnu-gcc -o plusOuMoins.run main.c
 
 Pour Windows :
     x86_64-w64-mingw32-gcc -o plusOuMoins.exe main.c
