@@ -1,7 +1,7 @@
 # plusOuMoins
 
 ## Presentation
-Il s'agit d'un petit jeu écrit en C. Il fait partie du cours "Apprenez à programmer en C" de Mathieu Nebra et Ranga Gonnage disponnible sur le site OpenClassRooms. 
+Il s'agit d'un petit jeu écrit en C. Il fait partie du cours "Apprenez à programmer en C" de Mathieu Nebra et Ranga Gonnage disponible sur le site OpenClassRooms. 
 Le principe du jeu est le suivant :
 
     1. L'ordinateur tire au sort un nombre entre 1 et 100.
