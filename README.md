@@ -1,4 +1,6 @@
 # plusOuMoins
+
+## Presentation
 Il s'agit d'un petit jeu écrit en C. Il fait partie du cours "Apprenez à programmer en C" de Mathieu Nebra et Ranga Gonnage disponnible sur le site OpenClassRooms. 
 Le principe du jeu est le suivant :
 
@@ -10,3 +12,12 @@ Le principe du jeu est le suivant :
     6. Et ainsi de suite, jusqu'à ce que vous trouviez le nombre mystère.
 
 Le but du jeu, bien sûr, est de trouver le nombre mystère en un minimum de coups. Allez c'est parti !
+  
+## Compilation
+J'ai compile le code pour Linux et Windows.
+
+Pour Linux :
+    x86_64-pc-linux-gnu-gcc -o plusOuMoins.app main.c
+
+Pour Windows :
+    x86_64-w64-mingw32-gcc -o plusOuMoins.exe main.c
