@@ -20,16 +20,16 @@ int main(int argc, char *argv[]) {
     int nombreEntre = 0;
 
     while (nombreEntre != nombreMystere) {
-        printf("Chuuut, voici le nombre mystere : %d\n", nombreMystere);
+        // printf("Chuuut, voici le nombre mystere : %d\n", nombreMystere); // Cheat pour le debug !
         printf("Entrez un nombre entre 1 et 100 \n");
         scanf("%d", &nombreEntre);
             if (nombreEntre < nombreMystere) {
-                printf("Desole, trop petit !\n Essayez encore\n");
+                printf("Desole, trop petit !\nEssayez encore\n\n");
             }
-            if (nombreEntre > nombreMystere) {
-                printf("Desole, trop grand !\n Essayez encore\n");
+            else if (nombreEntre > nombreMystere) {
+                printf("Desole, trop grand !\nEssayez encore\n\n");
             }
-            if (nombreEntre == nombreMystere) {
+            else {
                 printf("Bravo !\n Vous avez trouve le nombre mystere !\n");
             } 
     }
