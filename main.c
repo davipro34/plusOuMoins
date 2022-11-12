@@ -13,11 +13,10 @@ int main(int argc, char *argv[]) {
 
     srand(time(NULL));
 
-    const int MAX = 100, MIN = 1;
-    static int nombreMystere = 0;
-    nombreMystere = rand() % (MAX + MIN);
-
-    int nombreEntre = 0;
+    const int MAX = 100, MIN = 1; // On fixe la valeur max et la valeur min a utiliser dans la fonction rand().
+    static int nombreMystere = 0; // On cree et on initialise la variable (globale fichier) nombreMystere.
+    nombreMystere = rand() % (MAX + MIN); // On genere le nombre mystere dans un ecart grace au modulo.
+    static int nombreEntre = 0; // On cree et on initialise la variable (globale fichier) nombreEntre.
 
     while (nombreEntre != nombreMystere) {
         // printf("Chuuut, voici le nombre mystere : %d\n", nombreMystere); // Cheat pour le debug !
